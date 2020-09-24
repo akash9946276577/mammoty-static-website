@@ -4,8 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>mammoty</title>
+    <link rel="stylesheet" href="style.css">
+   
     <link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRvtHUmMMstAln2VStIajVrRXoNTWXA5Wq8Yg&usqp=CAU" type="image/gif" sizes="16x16">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    
 </head>
 <body>
     <header class="bg-info" style="position: fixed;width: 100%;z-index: 1;">
@@ -236,52 +239,38 @@
 
     </section>
 
-    <section id="contactus">
-      <div class="container">
-        <h1 class="text-center" >Contact us</h1>
-        <div class="row">
+    
 
-          <div class="col-md-12">
-
-
-          <form>
-            <div class="form-row">
-              <div class="form-group col-md-6">
-                <label for="inputEmail4">Name</label>
-                <input type="text" class="form-control" id="inputEmail4" placeholder="Name">
-              </div>
-              <div class="form-group col-md-6">
-                <label for="inputPassword4">Place</label>
-                <input type="text" class="form-control" id="inputPassword4" placeholder="Place">
-              </div>
-            </div>
-            <div class="form-row">
-              <div class="form-group col-md-6">
-                <label for="inputEmail4">Email</label>
-                <input type="email" class="form-control" id="inputEmail4" placeholder="Name">
-              </div>
-              <div class="form-group col-md-6 ">
-                <label for="inputPassword4">Mobile</label>
-                <input type="tel" class="form-control" id="inputPassword4" placeholder="Place">
-              </div>
-            </div>
-            <div class="form-group">
-              <label for="inputAddress">Message</label>
-              
-              <textarea class="form-control" cols="30" rows="10" placeholder="type your message here"></textarea>
-            </div>
-           
-
-
-            <div class="form-group text-center">
-            <button type="submit" class="btn btn-primary text-center">Submit</button>
-          </div>
-          </form>
-
-        </div>
-        </div>
+   <section id="contactus">
+    <div class="container">
+      <div style="text-align:center">
+        <h2>Contact Us</h2>
+        <p>Swing by for a cup of coffee, or leave us a message:</p>
       </div>
-    </section>
+      <div class="row">
+        
+        <div class="col-md-12">
+          <form id="gform"  method="POST" action="https://script.google.com/macros/s/AKfycbz9lZWjJe5SR1a_tkhrwf1JOkjcRO7JzLEqmShk/exec">
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="name" placeholder="Your name.."> <br>
+            <label for="lname">Email</label>
+            <input type="text" id="lname" name="email" placeholder="Your last name.."> <br>
+
+            <label for="country">Country</label>
+            <select id="country" name="color">
+              <option value="india">India</option>
+              <option value="canada">Canada</option>
+              <option value="usa">USA</option>
+            </select> <br>
+            <label for="subject">Subject</label>
+            <textarea id="subject" name="message" placeholder="Write something.." style="height:170px"></textarea> <br>
+            <input type="submit" value="Submit">
+          </form>
+        </div>
+        
+      </div>
+    </div>
+   </section> 
 
     <footer class="bg-info" >
      
@@ -298,10 +287,14 @@
 
 
 
+    
+
+
+
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    
+
 </body>
 </html>
